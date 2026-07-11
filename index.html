@@ -13,7 +13,7 @@
 	</header>
 	<section class="products">
 		<div class="card">
-			<img src="images/chair/chair.png" alt="3D Model">
+			<img src="images/chair/chair.webp">
 			<h2>Chair 3D Model</h2>
 			<h3>€2.5</h3>
 			<button onclick="openBuy('Chair 3D Model','2.5')">Kopen</button>
@@ -22,10 +22,14 @@
 	<div id="popup" class="popup">
 		<div class="box">
 			<span onclick="closeBuy()">✖</span>
-			<h2 id="modelName"></h2>
+			<h1 id="modelName"></h1>
 			<h3>Betaal met deze QR-code</h3>
-			<img src="images/qr-codes/Chair_3D_Model_2.5.png" class="qr" alt="Betaal QR-code">
-			<p>Na controle van de betaling stuur ik de downloadlink.</p>
+			<div class="column">
+				<img src="images/kbc_logo.webp" class="kbc">
+				<img src="images/qr-codes/Chair_3D_Model_2.5.png" class="qr">
+			</div>
+			<h3>Na betaling mail me op dit mail adres:</h3>
+			<h4><strong>jasper.spittaels@gmail.com</strong></h4>
 		</div>
 	</div>
 	<script src="script.js"></script>

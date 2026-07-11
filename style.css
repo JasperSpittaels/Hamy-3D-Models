@@ -75,6 +75,17 @@ button:hover {
 	width:200px;
 }
 
+.kbc {
+	width:100px;
+}
+
+.column {
+	display:flex;
+    flex-direction:column;
+	gap: 10px;
+    align-items:center;
+}
+
 input {
 	width:90%;
 	padding:12px;
