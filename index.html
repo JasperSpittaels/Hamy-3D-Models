@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Hamy's 3D Models</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>Hamy's 3D Models</h1>
+		<p>3D modellen voor Blender en games</p>
+	</header>
+	<section class="products">
+		<div class="card">
+			<img src="images/chair/chair.png" alt="3D Model">
+			<h2>Chair 3D Model</h2>
+			<h3>€2.5</h3>
+			<button onclick="openBuy('Chair 3D Model','2.5')">Kopen</button>
+		</div>
+	</section>
+	<div id="popup" class="popup">
+		<div class="box">
+			<span onclick="closeBuy()">✖</span>
+			<h2 id="modelName"></h2>
+			<h3>Betaal met deze QR-code</h3>
+			<img src="images/qr-codes/Chair_3D_Model_2.5.png" class="qr" alt="Betaal QR-code">
+			<p>Na controle van de betaling stuur ik de downloadlink.</p>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
