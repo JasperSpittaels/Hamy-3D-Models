@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Hamy's 3D Models</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 	<header>
 		<h1>Hamy's 3D Models</h1>
@@ -14,21 +16,34 @@
 	<section class="products">
 		<div class="card">
 			<img src="images/chair/chair.webp">
-			<h2>Chair 3D Model</h2>
-			<h3>€2.5</h3>
-			<button onclick="openBuy('Chair 3D Model','2.5')">Buy</button>
+			<h2>Low Poly Wooden Chair</h2>
+			<p class="description">Low poly chair model for Blender and games.</p>
+			<ul>
+				<li>✓ FBX included</li>
+				<li>✓ Game ready</li>
+				<li>✓ Low poly optimized</li>
+				<li>✓ Commercial use</li>
+			</ul>
+			<h3>€5</h3>
+			<button onclick="openBuy('Low Poly Wooden Chair','5')">Buy</button>
 		</div>
 	</section>
 	<div id="popup" class="popup">
 		<div class="box">
 			<span onclick="closeBuy()">✖</span>
 			<h1 id="modelName"></h1>
-			<h3>Pay with this QR code</h3>
-			<div class="column">
-				<img src="images/qr-codes/Chair_3D_Model_2.5.png" class="qr">
-			</div>
-			<h3>After payment, email me at this address and I will send you a Google Drive link:</h3>
-			<h4><strong>jasper.spittaels@gmail.com</strong></h4>
+			<h3>Pay with this QR-code</h3>
+			<img src="images/qr-codes/Chair_3D_Model_2.5.png" class="qr">
+			<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+				<h2>Order Information</h2>
+				<label>Naam:</label>
+				<input type="text" name="name" required>
+				<label>Email:</label>
+				<input type="email" name="email" required>
+				<label>Gekocht model:</label>
+				<input type="text" name="model" id="selectedModel" readonly>
+				<button type="submit">Versturen</button>
+			</form>
 		</div>
 	</div>
 	<script src="script.js"></script>
